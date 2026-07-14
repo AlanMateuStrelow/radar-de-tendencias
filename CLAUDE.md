@@ -2,15 +2,15 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Repository Overview
+## Visão Geral do Repositório
 
-This is a static, single-page landing site for "Radar de Tendências" — a personal project that curates and compares trending products in Brazil based on public Google Trends data, aimed at online resellers.
+Este é um site estático de página única para o "Radar de Tendências" — um projeto pessoal que faz curadoria e comparação de produtos em alta no Brasil com base em dados públicos do Google Trends, voltado para quem revende online.
 
-The entire site is one self-contained file: `index.html`. There is no build system, package manager, test suite, linter, or framework — no commands to install, build, or test. To preview changes, open `index.html` directly in a browser (or serve it with any static file server, e.g. `python3 -m http.server`).
+O site inteiro é um único arquivo autocontido: `index.html`. Não há sistema de build, gerenciador de pacotes, suíte de testes, linter ou framework — não existem comandos de instalação, build ou teste. Para visualizar as alterações, abra o `index.html` diretamente no navegador (ou sirva com qualquer servidor de arquivos estáticos, ex.: `python3 -m http.server`).
 
-## Architecture and Conventions
+## Arquitetura e Convenções
 
-- **Single-file site**: all markup, styles, and content live in `index.html`. CSS is inline in a `<style>` block in `<head>`; there is no JavaScript. Keep changes self-contained in this file unless the project deliberately grows beyond one page.
-- **Language**: all user-facing content is Brazilian Portuguese (`lang="pt-BR"`). Write new content in Portuguese and keep the existing tone (informative, transparent, "menos achismo").
-- **Styling**: a dark theme driven by CSS custom properties on `:root` (`--bg`, `--card`, `--text`, `--muted`, `--accent`). Reuse these variables for any new styling rather than hard-coding colors. Layout is mobile-first and responsive (`clamp()` for type, `auto-fit` grid for the steps section, max-width 720px content column).
-- **Page structure**: `header` (badge + title + pitch) → `main` with `.card` sections ("O que é", "Como funciona" with a `.steps` grid, "Contato") → `footer` with a disclaimer that the site has no official ties to the marketplaces mentioned. New sections should follow the `.card` pattern.
+- **Site de arquivo único**: toda a marcação, os estilos e o conteúdo ficam em `index.html`. O CSS está inline em um bloco `<style>` no `<head>`; não há JavaScript. Mantenha as alterações autocontidas nesse arquivo, a menos que o projeto cresça deliberadamente para além de uma página.
+- **Idioma**: todo o conteúdo voltado ao usuário é em português do Brasil (`lang="pt-BR"`). Escreva novos conteúdos em português e mantenha o tom existente (informativo, transparente, "menos achismo").
+- **Estilização**: tema escuro baseado em propriedades customizadas de CSS no `:root` (`--bg`, `--card`, `--text`, `--muted`, `--accent`). Reutilize essas variáveis em qualquer estilo novo em vez de fixar cores manualmente. O layout é mobile-first e responsivo (`clamp()` para tipografia, grid com `auto-fit` na seção de passos, coluna de conteúdo com largura máxima de 720px).
+- **Estrutura da página**: `header` (badge + título + apresentação) → `main` com seções `.card` ("O que é", "Como funciona" com o grid `.steps`, "Contato") → `footer` com o aviso de que o site não tem vínculo oficial com os marketplaces citados. Novas seções devem seguir o padrão `.card`.
