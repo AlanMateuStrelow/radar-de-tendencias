@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos em Alta — Radar de Tendências</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+    --accent: #ff7a30;
+    --subindo: #34c77b;
+    --estavel: #f0b429;
+    --caindo: #ef6461;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 3.5rem 1.5rem 2rem;
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  header h1 {
+    font-size: clamp(1.6rem, 4vw, 2.3rem);
+    margin: 0 0 0.5rem;
+  }
+  header h1 em { color: var(--accent); font-style: normal; }
+  header p { color: var(--muted); margin: 0.25rem 0; }
+  .voltar {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .card h2 { margin: 0; font-size: 1.1rem; }
+  .badge {
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    color: #10130f;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .badge.subindo { background: var(--subindo); }
+  .badge.estavel { background: var(--estavel); }
+  .badge.caindo  { background: var(--caindo); }
+  .variacao { font-size: 1.4rem; font-weight: 700; }
+  .variacao.subindo { color: var(--subindo); }
+  .variacao.estavel { color: var(--estavel); }
+  .variacao.caindo  { color: var(--caindo); }
+  .meta { color: var(--muted); font-size: 0.85rem; margin: 0; }
+  .obs { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .preco { font-weight: 600; }
+  .aviso {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: var(--muted);
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid #262a33;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <a class="voltar" href="index.html">&larr; Voltar ao início</a>
+    <h1>Produtos em <em>alta</em> agora</h1>
+    <p>Detectados por dados de busca (Google Trends Brasil), não por achismo.</p>
+    <p id="atualizado"></p>
+  </header>
+
+  <main>
+    <div id="lista" class="grid"></div>
+    <div id="vazio" class="aviso" hidden>Não foi possível carregar os dados agora. Tente novamente mais tarde.</div>
+  </main>
+
+  <footer>
+    Radar de Tendências — conteúdo informativo, sem vínculo oficial com marketplaces citados.
+  </footer>
+
+<script>
+  const rotulos = { subindo: "Subindo", estavel: "Estável", caindo: "Caindo" };
+
+  fetch("data/produtos.json")
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(dados => {
+      document.getElementById("atualizado").textContent =
+        "Atualizado em " + dados.atualizado_em.split("-").reverse().join("/") +
+        " · " + dados.fonte;
+
+      const lista = document.getElementById("lista");
+      for (const p of dados.produtos) {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const badge = document.createElement("span");
+        badge.className = "badge " + p.status;
+        badge.textContent = rotulos[p.status] || p.status;
+
+        const titulo = document.createElement("h2");
+        titulo.textContent = p.nome;
+
+        const variacao = document.createElement("div");
+        variacao.className = "variacao " + p.status;
+        variacao.textContent = "busca " + p.variacao_busca;
+
+        const meta = document.createElement("p");
+        meta.className = "meta";
+        meta.textContent = p.categoria + " · termo: “" + p.termo_busca + "”";
+
+        const preco = document.createElement("p");
+        preco.className = "meta preco";
+        preco.textContent = p.faixa_preco;
+
+        const obs = document.createElement("p");
+        obs.className = "obs";
+        obs.textContent = p.observacao;
+
+        card.append(badge, titulo, variacao, meta, preco, obs);
+        lista.appendChild(card);
+      }
+    })
+    .catch(() => { document.getElementById("vazio").hidden = false; });
+</script>
+</body>
+</html>
