@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-07",
+  "atualizado_em": "2026-08-08",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
@@ -15,8 +15,8 @@
       "nome": "Garrafa Térmica Inteligente",
       "termo_busca": "garrafa termica led",
       "categoria": "Utilidades",
-      "status": "caindo",
-      "variacao_busca": "-52%",
+      "status": "subindo",
+      "variacao_busca": "+40%",
       "faixa_preco": "R$ 29,90 – R$ 79,90",
       "observacao": "Modelos com display de temperatura ganharam tração nos últimos 30 dias."
     },
@@ -25,7 +25,7 @@
       "termo_busca": "mini ventilador portatil",
       "categoria": "Eletrônicos",
       "status": "caindo",
-      "variacao_busca": "-38%",
+      "variacao_busca": "-16%",
       "faixa_preco": "R$ 19,90 – R$ 59,90",
       "observacao": "Demanda constante, com pico esperado na primavera/verão."
     },
@@ -34,7 +34,7 @@
       "termo_busca": "organizador maquiagem",
       "categoria": "Beleza",
       "status": "estavel",
-      "variacao_busca": "+7%",
+      "variacao_busca": "-4%",
       "faixa_preco": "R$ 24,90 – R$ 89,90",
       "observacao": "Busca estável há meses; produto de giro recorrente."
     },
@@ -43,7 +43,7 @@
       "termo_busca": "umidificador de ar",
       "categoria": "Casa e Decoração",
       "status": "subindo",
-      "variacao_busca": "+19%",
+      "variacao_busca": "+18%",
       "faixa_preco": "R$ 39,90 – R$ 129,90",
       "observacao": "Queda sazonal após o inverno; reavaliar em maio."
     }
