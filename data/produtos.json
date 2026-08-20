@@ -1,13 +1,13 @@
 {
-  "atualizado_em": "2026-08-18",
+  "atualizado_em": "2026-08-20",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
       "nome": "Luz LED Quarto",
       "termo_busca": "luz led quarto",
       "categoria": "Casa e Decoração",
-      "status": "estavel",
-      "variacao_busca": "+5%",
+      "status": "subindo",
+      "variacao_busca": "+14%",
       "faixa_preco": "R$ 15,90 – R$ 49,90",
       "observacao": "Fita LED e luminárias para quarto seguem em forte alta, impulsionadas por vídeos de decoração."
     },
@@ -15,8 +15,8 @@
       "nome": "Garrafa Térmica Inteligente",
       "termo_busca": "garrafa termica led",
       "categoria": "Utilidades",
-      "status": "caindo",
-      "variacao_busca": "-100%",
+      "status": "estavel",
+      "variacao_busca": "+0%",
       "faixa_preco": "R$ 29,90 – R$ 79,90",
       "observacao": "Modelos com display de temperatura ganharam tração nos últimos 30 dias."
     },
@@ -24,8 +24,8 @@
       "nome": "Mini Ventilador Portátil",
       "termo_busca": "mini ventilador portatil",
       "categoria": "Eletrônicos",
-      "status": "caindo",
-      "variacao_busca": "-24%",
+      "status": "estavel",
+      "variacao_busca": "-6%",
       "faixa_preco": "R$ 19,90 – R$ 59,90",
       "observacao": "Demanda constante, com pico esperado na primavera/verão."
     },
@@ -43,7 +43,7 @@
       "termo_busca": "umidificador de ar",
       "categoria": "Casa e Decoração",
       "status": "estavel",
-      "variacao_busca": "+9%",
+      "variacao_busca": "+10%",
       "faixa_preco": "R$ 39,90 – R$ 129,90",
       "observacao": "Queda sazonal após o inverno; reavaliar em maio."
     }
