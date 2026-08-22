@@ -1,13 +1,13 @@
 {
-  "atualizado_em": "2026-08-21",
+  "atualizado_em": "2026-08-22",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
       "nome": "Luz LED Quarto",
       "termo_busca": "luz led quarto",
       "categoria": "Casa e Decoração",
-      "status": "subindo",
-      "variacao_busca": "+22%",
+      "status": "caindo",
+      "variacao_busca": "-10%",
       "faixa_preco": "R$ 15,90 – R$ 49,90",
       "observacao": "Fita LED e luminárias para quarto seguem em forte alta, impulsionadas por vídeos de decoração."
     },
@@ -24,8 +24,8 @@
       "nome": "Mini Ventilador Portátil",
       "termo_busca": "mini ventilador portatil",
       "categoria": "Eletrônicos",
-      "status": "estavel",
-      "variacao_busca": "+0%",
+      "status": "caindo",
+      "variacao_busca": "-14%",
       "faixa_preco": "R$ 19,90 – R$ 59,90",
       "observacao": "Demanda constante, com pico esperado na primavera/verão."
     },
@@ -34,7 +34,7 @@
       "termo_busca": "organizador maquiagem",
       "categoria": "Beleza",
       "status": "estavel",
-      "variacao_busca": "-3%",
+      "variacao_busca": "-1%",
       "faixa_preco": "R$ 24,90 – R$ 89,90",
       "observacao": "Busca estável há meses; produto de giro recorrente."
     },
@@ -42,7 +42,7 @@
       "nome": "Umidificador de Ar Ultrassônico",
       "termo_busca": "umidificador de ar",
       "categoria": "Casa e Decoração",
-      "status": "estavel",
+      "status": "subindo",
       "variacao_busca": "+10%",
       "faixa_preco": "R$ 39,90 – R$ 129,90",
       "observacao": "Queda sazonal após o inverno; reavaliar em maio."
