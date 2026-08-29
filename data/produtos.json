@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-28",
+  "atualizado_em": "2026-08-29",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
@@ -7,7 +7,7 @@
       "termo_busca": "luz led quarto",
       "categoria": "Casa e Decoração",
       "status": "estavel",
-      "variacao_busca": "-8%",
+      "variacao_busca": "-6%",
       "faixa_preco": "R$ 15,90 – R$ 49,90",
       "observacao": "Fita LED e luminárias para quarto seguem em forte alta, impulsionadas por vídeos de decoração."
     },
@@ -15,8 +15,8 @@
       "nome": "Garrafa Térmica Inteligente",
       "termo_busca": "garrafa termica led",
       "categoria": "Utilidades",
-      "status": "estavel",
-      "variacao_busca": "+0%",
+      "status": "subindo",
+      "variacao_busca": "+100%",
       "faixa_preco": "R$ 29,90 – R$ 79,90",
       "observacao": "Modelos com display de temperatura ganharam tração nos últimos 30 dias."
     },
