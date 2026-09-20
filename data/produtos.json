@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-19",
+  "atualizado_em": "2026-09-20",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
@@ -7,7 +7,7 @@
       "termo_busca": "luz led quarto",
       "categoria": "Casa e Decoração",
       "status": "caindo",
-      "variacao_busca": "-21%",
+      "variacao_busca": "-22%",
       "faixa_preco": "R$ 15,90 – R$ 49,90",
       "observacao": "Fita LED e luminárias para quarto seguem em forte alta, impulsionadas por vídeos de decoração."
     },
@@ -34,7 +34,7 @@
       "termo_busca": "organizador maquiagem",
       "categoria": "Beleza",
       "status": "caindo",
-      "variacao_busca": "-11%",
+      "variacao_busca": "-37%",
       "faixa_preco": "R$ 24,90 – R$ 89,90",
       "observacao": "Busca estável há meses; produto de giro recorrente."
     },
@@ -43,7 +43,7 @@
       "termo_busca": "umidificador de ar",
       "categoria": "Casa e Decoração",
       "status": "estavel",
-      "variacao_busca": "+4%",
+      "variacao_busca": "-2%",
       "faixa_preco": "R$ 39,90 – R$ 129,90",
       "observacao": "Queda sazonal após o inverno; reavaliar em maio."
     }
