@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-19",
+  "atualizado_em": "2026-10-21",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
@@ -42,8 +42,8 @@
       "nome": "Umidificador de Ar Ultrassônico",
       "termo_busca": "umidificador de ar",
       "categoria": "Casa e Decoração",
-      "status": "estavel",
-      "variacao_busca": "-2%",
+      "status": "caindo",
+      "variacao_busca": "-11%",
       "faixa_preco": "R$ 39,90 – R$ 129,90",
       "observacao": "Queda sazonal após o inverno; reavaliar em maio."
     }
