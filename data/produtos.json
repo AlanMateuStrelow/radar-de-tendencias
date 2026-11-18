@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-17",
+  "atualizado_em": "2026-11-18",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
@@ -24,8 +24,8 @@
       "nome": "Mini Ventilador Portátil",
       "termo_busca": "mini ventilador portatil",
       "categoria": "Eletrônicos",
-      "status": "caindo",
-      "variacao_busca": "-13%",
+      "status": "estavel",
+      "variacao_busca": "-1%",
       "faixa_preco": "R$ 19,90 – R$ 59,90",
       "observacao": "Demanda constante, com pico esperado na primavera/verão."
     },
@@ -43,7 +43,7 @@
       "termo_busca": "umidificador de ar",
       "categoria": "Casa e Decoração",
       "status": "caindo",
-      "variacao_busca": "-23%",
+      "variacao_busca": "-22%",
       "faixa_preco": "R$ 39,90 – R$ 129,90",
       "observacao": "Queda sazonal após o inverno; reavaliar em maio."
     }
