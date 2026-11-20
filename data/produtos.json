@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-19",
+  "atualizado_em": "2026-11-20",
   "fonte": "Google Trends (Brasil) — interesse de busca relativo, últimos 90 dias",
   "produtos": [
     {
@@ -15,8 +15,8 @@
       "nome": "Garrafa Térmica Inteligente",
       "termo_busca": "garrafa termica led",
       "categoria": "Utilidades",
-      "status": "estavel",
-      "variacao_busca": "+2%",
+      "status": "caindo",
+      "variacao_busca": "-19%",
       "faixa_preco": "R$ 29,90 – R$ 79,90",
       "observacao": "Modelos com display de temperatura ganharam tração nos últimos 30 dias."
     },
@@ -25,7 +25,7 @@
       "termo_busca": "mini ventilador portatil",
       "categoria": "Eletrônicos",
       "status": "subindo",
-      "variacao_busca": "+17%",
+      "variacao_busca": "+38%",
       "faixa_preco": "R$ 19,90 – R$ 59,90",
       "observacao": "Demanda constante, com pico esperado na primavera/verão."
     },
